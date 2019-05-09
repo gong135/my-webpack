@@ -1,0 +1,6 @@
+# 1. 项目根目录新建 .eslintignore 文件，里面内容如下
+# 忽略 eslint 对根目录 build 下的所有文件以及根目录下的 js 文件的校验
+/build/
+/*.js
+/node_modules
+
