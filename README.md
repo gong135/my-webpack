@@ -75,3 +75,4 @@
   并没有发现 eslint 生效，原因是还缺少一个关键依赖：eslint-loader，有了这个才能在 vue、js 文件中启动 eslint 的校验，
    npm i -D eslint-loader
    写好基本配置后，rules 启用
+   如果还有 improt 相关的东西有可能是这个  npm i -D  eslint-import-resolver-webpack
