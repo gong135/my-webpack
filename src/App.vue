@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="radius">啥第，额偶 1</div>
+    <div class="radius">啥第，额偶 1 {{app}}</div>
     <router-view/>
   </div>
 </template>
@@ -17,8 +17,11 @@ export default {
   name: 'App',
   data() {
     return {
-      app: '123',
+      app: process.env.API_WWW,
     };
+  },
+  mounted() {
+    console.log(process.env.API_WWW);
   },
 };
 </script>
