@@ -77,3 +77,9 @@
     写好基本配置后，rules 启用
     如果还有 improt 相关的东西有可能是这个 
     npm i -D  eslint-import-resolver-webpack
+# 扩展
+  ## 如何定义全局变量
+  在plugin 中 new webpack.DefinePlugin({
+    PRODUCT: '"很厉害商品"',
+    PRODUCTID: '123123',
+  })

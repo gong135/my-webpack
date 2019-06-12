@@ -1,4 +1,5 @@
 const  merge = require('webpack-merge');
+const  webpack = require('webpack');
 // merge 配置文件需要引入 
 const  baseConfig = require('./webpack.base.conf');
 
@@ -38,5 +39,9 @@ module.exports = merge(baseConfig, {
             template: 'index.html' //本地模板位置
         }),
         new FriendlyErrorsPlugin(),
+        new webpack.DefinePlugin({
+            PRODUCT: '"很厉害商品"',
+            PRODUCTID: '123123',
+          })
     ],
 });
