@@ -55,24 +55,25 @@
     
     但是我们会发现，不能解决。那是因为我们还没有把vue 挂载到 index.html
    ####  安装好 html 插件
-   npm i -D html-webpack-plugin  //挂载 html 用
-   npm i -D friendly-errors-webpack-plugin  // 友好型报错
+    npm i -D html-webpack-plugin  //挂载 html 用
+    npm i -D friendly-errors-webpack-plugin  // 友好型报错
 
-   启动栏可以改成
-   "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
-   也可以加 progress inline 
-### 完结撒花！！！！！
-  自我评价 完成了 50%。 因为还有生产环境，压缩，以及一些优化都没做。
-  能不能再完美一丢丢，虽然还有很多路要走，请时刻保持追求极致、认真和完美的心
+    启动栏可以改成
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
+    也可以加 progress inline 
+ #### 完结撒花！！！！！
+    自我评价 完成了 50%。 因为还有生产环境，压缩，以及一些优化都没做。
+    能不能再完美一丢丢，虽然还有很多路要走，请时刻保持追求极致、认真和完美的心
   #### 补充配置 dev.conf.js
     你可以设置 devServer:{..... quiet 结合上面报错插件 可以让控制台好很多} ;
   #### 配置 eslint 
     eslint 肯定是需要的，风格类型依赖 eslint-config-airbnb-base，babel-eslint 是需要来解析 eslint。然后安装过程 eslint-config-airbnb-base 还需要一个 eslint-plugin-import 的依赖，也安装一下。
     npm i -D eslint babel-eslint eslint-config-airbnb-base eslint-plugin-import eslint-plugin-vue
   ### 创建 eslintrc.js  文件 
-  参考代码 文件
+    参考代码 文件
 
-  并没有发现 eslint 生效，原因是还缺少一个关键依赖：eslint-loader，有了这个才能在 vue、js 文件中启动 eslint 的校验，
-   npm i -D eslint-loader
-   写好基本配置后，rules 启用
-   如果还有 improt 相关的东西有可能是这个  npm i -D  eslint-import-resolver-webpack
+    并没有发现 eslint 生效，原因是还缺少一个关键依赖：eslint-loader，有了这个才能在 vue、js 文件中启动 eslint 的校验，
+    npm i -D eslint-loader
+    写好基本配置后，rules 启用
+    如果还有 improt 相关的东西有可能是这个 
+    npm i -D  eslint-import-resolver-webpack
